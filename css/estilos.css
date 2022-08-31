@@ -1,0 +1,149 @@
+/* CSS meuPrimeiroSite */
+* { margin: 0; padding: 0; } /* zera margens superior/inferior/laterais de todo o site */
+
+body {
+    overflow-x: hidden; /* evita que o conteúdo estrapole as margens */
+}
+
+.topoSiteData {
+    color: yellow; /* padroniza a cor AMARELA para Data (Dia da Semana), acima da Foto de Perfil */
+    background-color: #3c546e; /* cor de fundo da Section/Container - Obs.: apesar do Topo e Rodapé terem o mesmo tamanho
+                                 e, teoricamente, a mesma cor, no Topo do Site, resolvi diminuir a intensidade da Cor Azul para
+                                 ficar visualmente mais parerido com o Rodapé Cor #2c3e50 */
+}
+
+.comentario { /* Citação entre MENU de navegação e Foto de Perfil, lado direito */
+    float: right; /* flutua o comentário ao lado da Foto de Perfil, lado direito */
+    margin-bottom: -50px; /* margem inferior do comentário NEGATIVA, evita que o comentário e a Foto de Perfil fiquem posicionadas me bloco */
+    margin-right: -10px; /* espaçamento NEGATIVO da margem direita do comentário em relação a Tela */
+    color: aqua; /* cor da fonte - cor mais CLARA que o fundo de Tela */
+    font-size: 0.9rem; /* tamanho reduzido da fonte do comentário */ 
+    text-align: right; /* coloca as linhas digitadas do lado direito da Tela */
+    font-style: italic; /* texto do comentário em itálico */
+    text-shadow: 0 0 10px black; /* efeito sombreado ao redor das letras */
+}
+
+.foto-perfil { /* classe criada para Foto de Perfil, colocada dentro do Segundo Container, na tag "img" */
+    height: auto; /* altura máxima da foto */
+    max-width: 25%; /* largura da foto será automátima (responsiva), vai se adaptar a tela quando for minimizada
+                    Obs.: este percentual varia de acordo com o tamanho em que a foto for salva. Exemplo: se você
+                    salvar uma Foto Perfil qua ocupa tota a Tela quando você a abrir, essa foto ficará muito grande
+                    dentro do site, portanto é necessário ajustar esta grande proporção para menos, ou seja, 25%
+                    30% de largura máxima */
+    border-radius: 50%; /* deixa a foto totalmente redonda */
+    box-shadow: 0 0 10px black; /* efeito sombreado ao redor da foto, causa a impressão da Foto de Perfil estar flutuando */
+}
+
+.textoBranco {
+    color: white !important; /* padroniza a cor BRANCA no Menu de Navegação e a descriçao de Cargos, logo abaixo da Foto de Perfil */ 
+}
+
+.meuNome {
+    color: white !important; /* padroniza a cor BRANCA para Meu Nome, logo abaixo da Foto de Perfil */
+    text-transform: uppercase; /* coloca o texto em Caixa Alta */
+    font-weight: 900; /* faz com que o texto fique com aparência de NEGRITO, quanto maior o número, mas NEGRITO ficará */
+}
+
+.botaoContato {
+    width: 145px; /* largura dos botões abaixo da Foto de Perfil */
+    height: 38px; /* altura dos botões abaixo da Foto de Perfil  */
+}
+
+.icones {
+    padding: 5px; /* controlar espaçamento entre os ícones do GitHub e Linkedin etc e botões de CONTATO etc */
+    line-height: 0px; /* espaçamento entre os ícones e botões de CONTATO etc e Links para GitHub/Linkedin (apenas), 
+                    abaixo da Foto de Perfil - o Link(Botão) para o Power BI não está sendo controlado por aqui,
+                    pois foi copiado diretamente do Google */
+    font-size: 60px; /* tamanho dos ícones do GitHub e Linkedin etc */
+}
+
+.boxProjetos {
+    list-style: none; /* retira os marcadores REDONDOS, que por padrão vêm nas tags <ul> do Box Section/Container (Projetos) */    
+    color: rgb(39, 132, 185); /* cor de fonte apenas nas tags <ul> (Projetos) */
+    font-weight: 700; /* faz com que o texto fique com aparência de NEGRITO, quanto maior o número, mas NEGRITO ficará */
+    background-color: rgb(235, 227, 227); /* cor de fundo do Box Section/Container (Projetos) */
+}
+
+.corPrimaria {
+    background-color: #18bc9c; /* cor de fundo de uma Section/Container */
+    padding-top: 50px; /* espaçamento entre o texto e margem superior da Section/Container */
+    padding-bottom: 50px; /* espaçamento entre o texto e margem inferior da seção/container */
+}
+
+.corSecundaria { /* esta cor de fundo de Tela pode ser aplicada em qualquer Section/Container - está qui apenas como demonstração */
+    background-color: red; /* cor de fundo de uma Section/Container */
+    padding-top: 50px; /* espaçamento entre o texto e margem superior da Section/Container */
+    padding-bottom: 50px; /* espaçamento entre o texto e margem inferior da Section/Container */
+    border-radius: 5px; /* bordas superior/inferior da Section/Container */
+}
+
+p {
+    font-family: Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif; /* fonte das letras em todo o website */
+    color: #2c3e50 !important; /* cor da fonte APENAS dentro de Section/Container com fundo de Tela CLARO (Projetos / Sobre mim) */
+}
+
+.titulosBrancos {
+    color: white; /* padroniza a cor BRANCA para todos os Títulos, dentro das Section/Container VERDES, incluindo o nome do Perfil */
+    text-decoration: underline; /* sublinhado em todos os Títulos */
+    text-underline-position: under; /* UNDER - evita que ao sublinhado do Título fique gradado às palavras */
+    padding-bottom: 20px; /* espaçamento entre o Título e o primeiro parágrafo */
+    text-transform: uppercase; /* deixa todos os Títulos em Caixa Alta */
+    font-weight: 900; /* faz com que o texto fique com aparência de NEGRITO, quanto maior o número, mas NEGRITO ficará */
+}
+
+.titulosVerdes {
+    color: #18bc9c; /* padroniza a cor VERDE para todos os Títulos, dentro de Section/Container com cor CLARAS */
+    text-decoration: underline; /* sublinhado em todos os Títulos */
+    text-underline-position: under; /* UNDER - evita que ao sublinhado do Título fique gradado às palavras */
+    padding-bottom: 20px; /* espaçamento entre o Título e o primeiro parágrafo */
+    text-transform: uppercase; /* deixa todos os Títulos em Caixa Alta */
+    font-weight: 900; /* faz com que o texto fique com aparência de NEGRITO, quanto maior o número, mas NEGRITO ficará */
+}
+
+.paragrafoBrancos {
+    color: white !important; /* cor da fonte APENAS dentro de Section/Container com fundo de Tela VERDE (Certificados / Contato) */
+}
+
+.jumbotron { /* por padrão, essa Classe tem 10px de espaçamento superior entre cada Section/Container */
+    margin-bottom: 0px; /* portanto, a margem inferior padrão foi zerada */
+}
+
+html { /* a função "Rolagem Suave" não funciona no Microsoft Edge (antigo Internet Explorer) */   
+    scroll-behavior: smooth; /* suaviza a rolagem em todo o site, quando o Menu (Projetos/Certificados/Sobre mim/Contato) for clicado */
+}
+
+.rodapeSite {
+    color: white !important; /* padroniza a cor BRANCA no Rodapé do Site */
+    background-color: #2c3e50; /* cor de fundo do Rodapé do Site - Section/Container */
+    padding-top: 7.5px; /* espaçamento entre o texto dentro do Rodapé do Site e a margem superior dele */
+    padding-bottom: 7.5px; /* espaçamento entre o texto dentro do Rodapé do Site e a margem inferior dele */
+    margin-bottom: 0px; /* retira o espaçamento entre o Rodapé e o fim do site (da Tela) */    
+}
+
+.recuo1 { /* Recuo do Texto acima dos Certificados */ 
+    padding-left: 70px;
+}
+
+.recuo2 { /* Recuo do Texto acima dos Certificados */ 
+    padding-left: 140px;
+}
+
+.recuo3 { /* Recuo do Texto acima dos Certificados */ 
+    padding-left: 210px;
+}
+
+/* Controle Modo Responsivo */
+@media all and (max-width: 980px) { /* Tamanho máximo do Container de Textos */
+    .comentario {
+        font-size: 0.7rem; /* tamanho reduzido da fonte do comentário */ 
+    }        
+    .recuo1 { /* Recuo do Texto acima dos Certificados */ 
+        padding-left: 20px;
+    }
+    .recuo2 { /* Recuo do Texto acima dos Certificados */ 
+        padding-left: 90px;
+    }
+    .recuo3 { /* Recuo do Texto acima dos Certificados */ 
+        padding-left: 160px;
+    }
+}

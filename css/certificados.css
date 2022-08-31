@@ -1,0 +1,99 @@
+/* CSS meuPrimeiroSite */
+* { margin: 0; padding: 0; } /* zera margens e preenchimento dentro da Section/Container para o 
+                            Certificado/Imagem ocupar tamanhos iguais dentro da <div> */
+
+.slider { /* Definição da Classe Pai */
+    display: block; /* posiciona todos os Certificados/Imagens na mesma posição central da Tela (em blocos, um abaixo do outro) */
+    height: 493px; /* altura do Certificado/Imagem */
+    width: 800px; /* largura do Certificado/Imagem */
+    margin: auto; /* especifica que a margem será automática e igual em todos os lados do para cada Certificado/Imagem inserido */
+    margin-top: 20px; /* margem entre o topa do Certificado/Imagem e a última linha de texto da Section/Container */
+    position: relative; /* evita que os Certificados/Imagens dentro da Section/Container extrapolem as margens da <div> */
+}
+
+.slider li { /* Definição da Classe Filho que ira receber todo estilo aplicado na Classe Pai (classe principal) */
+    list-style: none; /* "none = nenhum" isso evita que o estilo do Certificado/Imagem seja padronizado por outros parâmetros */
+    position: absolute; /* posiciona os "Botõezinhos QUADRADOS" lado a lado em cima da imagem */
+}
+
+.slider img { /* Definição dos estilos de que cada Certificado/Imagem que a Classe Filho irá receber */
+    margin: auto; /* centraliza os Certificados/Imagens dentro da Section/Container com as mesmas margens (laterais/superior/inferior) */
+    height: 80%; /* definição da altura máxima de que cada Certificado/Imagem terá dentro da Section/Container */
+    width: 80%; /* definição da largura máxima de que cada Certificado/Imagem terá dentro da Section/Container */
+    vertical-align: top; /* define que cada Certificado/Imagem ficará alinhado verticalmente em relação ao topo da Section/Container */
+}
+
+.slider input {
+    display: none; /* aqui, nenhum elemento de entrada será mostrado */
+}
+
+.slider label { /* Definição e estilo da Classe Filho */
+    background-color: #80ff00; /* cor dos "Botõezinhos QUADRADOS" no canto inferior esquerdo do c*/
+    bottom: 10px; /* defini o espaçamento da base/margem do Certificado/Imagem com os "Botõezinhos QUADRADOS" */
+    cursor: auto; /* "pointer" também funciona - defini que o cursor apareça como "seta" quando o mouse for posicionado sobre o Certificado/Imagem */
+    display: block; /* posiciona todos os Certificados/Imagens na mesma posição central da Tela (em blocos, um abaixo do outro) */
+    height: 10px; /* altura que os "Botõezinhos QUADRADOS" terão dentro do Certificado/Imagem */
+    position: absolute; /* mantém os "Botõezinhos QUADRADOS" no canto inferior esquerdo do Certificado/Imagem para navegar entre eles */
+    width: 10px; /* largura que os "Botõezinhos QUADRADOS" terão dentro do Certificado/Imagem */
+    z-index: 10; /* garante que os "Botõezinhos QUADRADOS" serão mostrados sobre o Certificado/Imagem em qualquer circunstância */
+}
+
+.slider li:nth-child(1) label { /* nth-child irá buscar a PRIMEIRA Classe Filho */
+    left: 90px; /* tabula e coloca, da margem direita pra esquerda, o "Primeiro Botãozinho QUADRADO" do Certificado/Imagem */
+}
+
+.slider li:nth-child(2) label { /* nth-child irá buscar a SEGUNDA Classe Filho */
+    left: 110px; /* tabula e coloca, da margem direita pra esquerda, o "Segundo Botãozinho QUADRADO" do Certificado/Imagem */
+}
+
+.slider li:nth-child(3) label { /* nth-child irá buscar a TERCEIRA Classe Filho */
+    left: 130px; /* tabula e coloca, da margem direita pra esquerda, o "Terceiro Botãozinho QUADRADO" do Certificado/Imagem */
+}
+
+.slider li:nth-child(4) label { /* nth-child irá buscar a QUARTA Classe Filho */
+    left: 150px; /* tabula e coloca, da margem direita pra esquerda, o "Quarto Botãozinho QUADRADO" do Certificado/Imagem */
+}
+
+.slider li:nth-child(5) label { /* nth-child irá buscar a QUINTA Classe Filho */
+    left: 170px; /* tabula e coloca, da margem direita pra esquerda, o "Quinto Botãozinho QUADRADO" do Certificado/Imagem */
+}
+
+.slider img {
+    opacity: 0; /* deixa invísivel cada Certificado/Imagem, que só será mostrado quando clicado no "Botãozinho QUADRADO" */
+    visibility: hidden; /* esconde os Certificados/Imagens da Classe Filha, deixa apenas o primeiro slide aparecendo (Classe Pai)
+                        será exibo um Certificado/Imagem por vez*/
+}
+
+.slider li input:checked ~ img { /* checked define que os estilos serão aplicados apenas ao PRIMEIRO Certificado/Imagem */
+    opacity: 1; /* mostra o PRIMEIRO Certificado/Imagem */
+    visibility: visible; /* deixa o PRIMEIRO Certificado/Imagem visível */
+    z-index: 10; /* garante que os "Botõezinhos QUADRADOS" serão mostrados sobre o Certificado/Imagem em qualquer circunstância */
+}
+
+.slider img{
+    -moz-transition: -moz-transform 0.5s; /* garante o funcionamento "de transição da flutuação" do Certificado/Imagem para Mozilla */
+    -webkit-transition: -webkit-transform .5s ease; /* garante o funcionamento "de transição da flutuação" do Certificado/Imagem para Chrome e Safari */
+    transition: transform .5s ease-in-out; /* causa uma impressão visual "de flutuação" quando o mouse for colocado sobre o Certificado/Imagem 
+                                "ease" especifica um efeito de transição com início lento, depois rápido, depois termina lento */
+}
+
+.slider:hover img {	/* animação/flutuar que faz o Certificado/Imagem expandir na Tela quando o curso/mouse for posicionado sobre ele */
+    -moz-transform: scale(1.5); /* garante o funcionamento no aumento de tamanho do Certificado/Imagem para Mozilla */
+    -webkit-transform: scale(1.5); /* garante o funcionamento no aumento de tamanho do Certificado/Imagem para Chrome e Safari */
+    transform: scale(1.5); /* aumenta o tamanho do Certificado/Imagem original em uma escala de 1.5 a mais */
+    transition: transform .5s ease-in-out; /* causa uma impressão visual "de flutuação" quando o mouse for colocado sobre o Certificado/Imagem 
+                                            "ease" especifica um efeito de transição com início lento, depois rápido, depois termina lento */
+}
+
+
+/* Controle no Modo Responsivo */
+@media all and (max-width: 980px) { /* Tamanho máximo do Container de Textos */
+    .slider {
+        margin-left: -55px; /* centraliza os Certificados no meio da Tela */
+    }
+    .slider:hover img {
+        -moz-transform: scale(1.2); /* garante o funcionamento no aumento de tamanho do Certificado/Imagem para Mozilla */
+        -webkit-transform: scale(1.2); /* garante o funcionamento no aumento de tamanho do Certificado/Imagem para Chrome e Safari */
+        transform: scale(1.2); /* aumenta o tamanho do Certificado/Imagem original em uma escala de 1.2 a mais */
+    }
+}

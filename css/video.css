@@ -1,0 +1,38 @@
+/* CSS meuPrimeiroSite */
+.video {
+    width: 360px; /* largura do video */
+    height: 200px; /* altura do video */    
+    position: relative; /* faz o video se adaptar dentro da Section/Container */
+    display: inline-block; /* coloca cada video um ao lado do outro dentro da Section/Container */
+    margin-top: 10px; /* espaçamento superior entre a última linha de texto dentro da Section/Container e os videos */ 
+}
+
+.legenda { /* Textos/Legendas abaixo de cada video */
+    background: rgb(64, 82, 120); /* cor de plano de fundo nas legendas */
+    color: white; /* cor das letras nas legendas */
+    border-radius: 5px; /* efeito de bordas arredondadas para o plano de fundo nas legendas */
+    padding: 5px; /* espaçamento superior/inferior do plano de fundo dentros das legendas em relação ao texto */
+    font-size: medium; /* tamanho reduzido da legenda dentre do plano de fundo */ 
+    display: flex-end; /* centraliza a legenda abaixo de cada video */
+    width: fit-content; /* ajusta o plano de fundo da legenda do mesmo tamanho do texto digitado */
+    font-style: italic; /* texto da legenda em itálico */
+}
+
+.video:hover {	/* animação/flutuar que expande o video na Tela quando o curso/mouse for posicionado sobre ele */
+    -moz-transform: scale(1.02); /* garante o funcionamento no aumento de tamanho do video para Mozilla */
+    -webkit-transform: scale(1.02); /* garante o funcionamento no aumento de tamanho do video para Chrome e Safari */
+    transform: scale(1.02); /* aumenta o tamanho do video original em uma escala de 1.02 a mais */
+    -moz-transition: -moz-transform 0.5s; /* garante o funcionamento "de transição na flutuação" do video para Mozilla */
+    -webkit-transition: -webkit-transform .5s ease; /* garante o funcionamento "de transição na flutuação" do video para Chrome e Safari */
+    transition: transform .5s ease; /* causa uma impressão visual "de flutuação" quando o mouse for colocado sobre o video 
+                                "ease" especifica um efeito de transição com início lento, depois rápido, depois termina lento */
+}
+
+/* Controle Modo Responsivo */
+@media all and (max-width: 980px) { /* Tamanho máximo do Container de Textos */
+    .video { /* ajuda a cria DUAS colunas para que os vídeos */
+        width: 340px; /* largura do video */
+        height: 180px; /* altura do video */    
+    }
+}
+

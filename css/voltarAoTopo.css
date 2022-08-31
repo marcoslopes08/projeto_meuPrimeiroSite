@@ -1,0 +1,18 @@
+/* CSS meuPrimeiroSite */
+.voltarAoTopo {
+	position: fixed; /* fixa o botão do lado direito da Tela */
+	bottom: 10px; /* dá um espaçamento entre o Botão e a borda inferior da Tela do Computador */
+	right: 0px; /* aumenta/diminui o espaçamento entre a posição do Botão em relação a borda direita da Tela do Computador */
+	padding: 10px; /* adiciona um espaço de preenchimento ao redor do Botão - esse espaço ajuda a posicionar corretamente o texto */
+	letter-spacing: 1.0px; /* espaço entre as letras */
+}
+
+.voltarAoTopo:hover { /* animação/flutuar de estilos ao passar o cursor/mouse sobre o Botão Voltar ao Topo */
+	background-color: rgb(146, 207, 95); /* cor de fundo que aparece quando o cursor/mouse for posicionado sobre o Botão */
+	bottom: 10px; /* dá um espaçamento entre o Botão e a borda inferior da Tela do Computador */
+	right: 0px; /* aumenta/diminui o espaçamento entre a posição do Botão em relação a borda direita da Tela do Computador */
+	padding: 10px; /* adiciona um espaço de preenchimento ao redor do Botão - esse espaço ajuda a posicionar corretamente o texto */
+	border-radius: 10px; /* bordas arredondadas quando o cursor/mouse for posicionado sobre o Botão */
+	border-style: solid transparent; /* define se haverá ou não algum tipo de estilização ao redor da animação do Botão quando o
+									cursor/mouse for posicionado sobre ele */
+}
