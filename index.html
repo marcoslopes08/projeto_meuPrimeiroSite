@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	
+	<meta charset="UTF-8">
+	<!-- Se as tag <meta> estiverem aqui, o Site não fica Responsivo -->
+	<!-- <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		 --><title>Meu portifólio</title>
+	
+	<!-- Abaixo BIBLIOTECAS do Bootstrap e JavaScript para estilizar a página -->
+	<link rel="stylesheet"
+		href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+		integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+		crossorigin="anonymous">
+	
+	<!-- <script
+		src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+		integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+		crossorigin="anonymous"></script>
+	   -->
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+		integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+		crossorigin="anonymous"></script>
+		
+	<script 
+		src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" 
+		integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" 
+		crossorigin="anonymous"></script>
+	 	
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+		integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+		crossorigin="anonymous"></script>
+	
+	<script
+		src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+		integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+		crossorigin="anonymous"></script>
+	<!-- Acima BIBLIOTECAS do Bootstrap para estilizar a página -->
+
+	<!-- Abaixo BIBLIOTECA para criar Ícones do GitHub, Linkedin etc pelo Fontawesome --> 
+	<script 
+		src="https://kit.fontawesome.com/f0e17cbf2f.js" 
+		crossorigin="anonymous"></script>
+	<!-- Acima BIBLIOTECA para criar Ícones do GitHub, Linkedin etc pelo Fontawesome -->
+
+    <!-- Abaixo BIBLIOTECAS para controlar o BOTÃO Voltar ao Topo -->
+	<!-- CSS jQuery UI -->
+	<!-- <link href="css/jquery-ui.min.css" rel="stylesheet"> -->
+	<!-- CSS jQuery UI Default Theme -->
+	<!-- <link href="css/jquery-ui.theme.min.css" rel="stylesheet"> -->
+	<!-- JS jQuery Core -->
+	<!-- <script src="js/jquery-3.1.1.min.js"></script> -->
+	<!-- JS jQuery UI -->
+	<!-- <script src="js/jquery-ui.min.js"></script> -->
+	<!-- BLOQUEADO - Ajax jQuery -->
+	<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.6.3.min.js"></script>
+	<!-- BLOQUEADO - Abaixo - jQuery (necessário para Pluguins de JavaSript no Bootstrap) -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+	<!-- Acima BIBLIOTECAS para controlar o BOTÃO Voltar ao Topo -->
+	
+	<!-- Abaixo JavaScript que controla Data Atual no topo da Tela, lado esquerdo -->
+	<link rel="stylesheet" href="java/dataAtual.js">
+	
+	<!-- Abaixo CSS que controla os Estilos da página, tamanho de fonte, cor, foto de perfil, etc -->
+	<link rel="stylesheet" href="css/estilos.css">
+
+	<!-- Abaixo CSS que controla as imagens dos CERTIFICADOS -->
+	<link rel="stylesheet" href="css/certificados.css">
+	
+	<!-- Abaixo CSS que controla os Videos -->
+	<link rel="stylesheet" href="css/video.css">
+
+	<!-- Abaixo CSS que controla Botão VOLTAR AO TOPO -->
+	<link rel="stylesheet" href="css/voltarAoTopo.css">
+	
+	<!-- Abaixo jQuery (Java) que faz o Botão VOLTAR AO TOPO aparecer/desaparecer na rolagem da página -->
+	<link rel="stylesheet" href="java/animacaoBotaoVoltarAoTopo.js">
+
+</head>
+
+<body>
+	<!--  PARTE 1 - TOPO DO SITE - Abaixo INCLUÍ JavaScript para DATA ATUAL -->
+	<nav class="navbar navbar-expand-md navbar-light topoSiteData">
+		<a class="navbar-brand topoSiteData">
+			
+			<script src="java/dataAtual.js"></script>
+
+		</a>
+	<!--  Fim da PARTE 1 - TOPO DO SITE - Acima JavaScript para DATA ATUAL -->
+
+	<!--  PARTE 1 (continuação) - TOPO DO SITE - Menu de Navegação (Projetos/Certificados/Sobre mim/Contato) -->
+		<!-- Abaixo Botão MENU Navegação tipo Drop-down, que aparece no canto Superior Direito da Tela quando a página é minimizada -->
+		<button class="navbar-toggler" type="button" data-toggle="collapse"
+			data-target="#navbarsExample04" aria-controls="navbarsExample04"
+			aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<!-- Acima Botão MENU Navegação tipo Drop-down, que aparece no canto Superior Direito da Tela quando a página é minimizada -->
+
+		<!-- Abaixo, div para incluir os Botões do MENU no Topo do Website -->
+		<div class="collapse navbar-collapse" id="navbarsExample04">
+			<!-- Abaixo, linha que coloca o MENU à esquerda da Tela -->
+			<ul class="navbar-nav mr-auto"></ul>
+				<!-- Abaixo LINKs do MENU -->
+				<ul class="navbar-nav">
+					<li><a href="#projetos" class="nav-link textoBranco">|&nbsp;&nbsp;&nbsp; Projetos</a></li>
+					<li><a href="#certificados" class="nav-link textoBranco">|&nbsp;&nbsp;&nbsp; Certificados</a></li>
+					<li><a href="#sobre-mim" class="nav-link textoBranco">|&nbsp;&nbsp;&nbsp; Sobre mim</a></li>
+					<li><a href="#contato" class="nav-link textoBranco">|&nbsp;&nbsp;&nbsp; Contato</a></li>
+				</ul>
+		</div>
+	</nav>
+
+	<!-- Fim da PARTE 1 (continuação) - TOPO DO SITE - Menu de Navegação (Projetos/Certificados/Sobre mim/Contato) -->
+
+	<!-- PARTE 2 - Abaixo, Bootstrap para colocar foto, botões etc -->
+	<!-- para conseguir o código Bootstrap, basta entrar no modelo que desejar, digitar F12 (ou inspecionar) e copiar -->
+	<section class="jumbotron text-center corPrimaria">
+		
+			<!-- Abaixo, comentário flutuante entre MENU e Foto de Perfil, do lado direito -->
+			<ul class="comentario">
+				<span>A construção deste website, por ser o meu primeiro, foi desafiadora!<br>
+
+					Hoje, vejo que a programação me abriu portas e sei que outras serão abertas!
+				</span>
+			</ul>
+
+		<div class="container">
+			
+			<ul>
+			<i href="https://imgbox.com/fENzJE9h" target="_blank">
+				<img class="foto-perfil" src="https://thumbs2.imgbox.com/ee/8c/fENzJE9h_t.png" alt="foto de perfil" /></i>
+			</ul>
+			
+			<h1 class="jumbotron-heading meuNome">Marcos Lopes</h1>
+			<p class="lead textoBranco">&#x2714 Desenvolvedor Web &nbsp;&nbsp;&nbsp;&nbsp;
+				&#x2714 Analista de Power BI</p>
+			<p>
+				<a href="#contato" class="btn btn-dark my-2 botaoContato">CONTATO</a>
+				<!-- caso o ÍCONE do Power BI abaixo não funcione, recolocar este Botão -->
+				<!-- <a href="#powerbi" class="btn btn-dark my-2 botaoContato" style="color:rgb(0, 255, 149)">Power BI</a> -->
+				<a href="https://marcoslopes08.github.io/calculadoraIMC/" class="btn btn-dark my-2 botaoContato" style="color: rgb(0, 255, 149)">Calculadora IMC</a>
+				<a href="https://marcoslopes08.github.io/projetoCurriculo/" class="btn btn-dark my-2 botaoContato" style="color:rgb(0, 255, 149)">Meu outro site</a>
+				<!-- linha acima INCLUÍ pra colocar link pro meu outro site com PARALAXX, 
+					falta trocar em <a href="#contato" por "https://outrosite.com.br" -->
+			</p>
+				<!-- abaixo, Ícones/Botões Links para Redes Soiais etc, usando Fontawesome -->
+				<a class="icones" href="https://github.com/marcoslopes08">
+					<i style="color: rgb(221, 93, 46)" title="GitHub"
+					class="icones fab fa-github"></i></a> 
+				<a class="icones" href="https://www.linkedin.com/in/marcos-lopes-982616215/">
+					<i style="color: rgb(29, 29, 175)" title="LinkedIn"
+					class="icones fab fa-linkedin"></i></a>
+				<a class="icones" href="COLOCAR AQUI URL do Power BI">
+					<i><img class="icones" 
+						src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/New_Power_BI_Logo.svg/630px-New_Power_BI_Logo.svg.png" 
+							style="width: 60px; height: 50px; padding-top: 0%; padding-left: 0%;
+								padding-right: 0%;" title="Power BI"></i></a>
+		</div>
+	</section>
+	<!-- Fim da PARTE 2 -->
+
+	<!-- PARTE 3 - Projetos -->
+	<section class="album py-5 bg-light" id="projetos">
+		<div class="container">
+			<h2 class="text-center jumbotron-heading titulosVerdes">Projetos</h2>
+		
+			<blockquote class="blockquote text-center">
+				<p>Ajudando minha irmã com várias planilhas, me aperfeiçoei 
+				no Excel, depois aprendi <i>Power BI</i> e <i>Power Query</i>. 
+				Como o volume de dados foi grande, surgiu o desafio de desenvolver 
+				códigos em <i>Visual Basic</i> para automatizar todas as rotinas.</p>
+				<p>Daí em diante, resolvi aprender outras linguagens como <i>Python, 
+				SQL, Java, HTML</i> e <i>CSS</i>; e para me reinventar e 
+				superar desafios no aprendizado, ainda continuo estudando para aprofundar meus 
+				conhecimentos nestas linguagens.</p>
+			</blockquote>
+
+			<div class="row" style="padding-top: 20px">
+				<!-- por padrão, o Bootstrap vem "col-md-4" que significa 12 colunas por página, "col-md-6" significa
+				agrupar 3 colunas para formar APENAS 1 -->
+				<div class="col-md-6"> 
+					<div class="card mb-4 box-shadow">
+						<img class="card-img-top" 
+							src="https://thumbs2.imgbox.com/69/0c/7Qjxp1Ci_t.png" alt="imagem html java css" 
+								target="_blank" data-holder-rendered="true"
+									style="max-height: 290px; width: 100%; max-width: 100%; display: block; 
+										position: relative; align-content: center;">
+						<div class="card-body boxProjetos">
+							<p class="card-text boxProjetos">Veja o projeto deste website e outros que desenvolvido em:</p>
+							<ul class="boxProjetos">
+								<li>&#x2714 &nbsp;HTML</li>
+								<li>&#x2714 &nbsp;CSS</li>
+								<li>&#x2714 &nbsp;JavaScript</li>
+							</ul>
+							<!-- abaixo Botões para Links e Códigos hospedados no GitHub etc -->
+							<div class="d-flex justify-content-between align-items-center">
+								<div class="btn-group">
+									<!-- <a href="COLOCAR AQUI LINKs - Calculadora IMC / Meu outro Site">
+										<button type="button" class="btn btn-sm btn-outline-success"><b>Ver Projeto</b></button></a> -->
+									<a href="COLOCAR AQUI LINK do GitHub">
+										<button type="button" class="btn btn-sm btn-outline-primary"><b>Ver códigos</b></button></a>
+								</div>
+								<small class="text-muted">Projeto Web</small>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="card mb-4 box-shadow">
+						<img class="card-img-top" 
+							src="https://thumbs2.imgbox.com/31/6b/MUUAhExt_t.png" alt="imagem vba python sql" 
+								target="_blank" data-holder-rendered="true"
+									style="max-height: 290px; width: 100%; max-width: 100%; display: block; 
+										position: relative; align-content: center;">
+						<div class="card-body boxProjetos">
+							<p class="card-text boxProjetos">Veja mais projetos e códigos que desenvolvi em:</p>
+							<ul class="boxProjetos">
+								<li>&#x2714 &nbsp;Python</li>
+								<li>&#x2714 &nbsp;SQL</li>
+								<li>&#x2714 &nbsp;Visual Basic</li>
+							</ul>
+							<!-- abaixo Botões para Links e Códigos hospedados no GitHub etc -->
+							<div class="d-flex justify-content-between align-items-center">
+								<div class="btn-group">
+							<!-- 		<a href="COLOCAR AQUI LINKs - Calculadora IMC / Meu outro Site">
+										<button type="button" class="btn btn-sm btn-outline-success"><b>Ver Projeto</b></button></a> -->
+									<a href="COLOCAR AQUI LINK do GitHub">
+										<button type="button" class="btn btn-sm btn-outline-primary"><b>Ver códigos</b></button></a>
+								</div>
+								<small class="text-muted">Projeto Web</small>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Fim da PARTE 3 -->
+
+	<!-- PARTE 4 - Certificados -->
+	<section class="jumbotron text-center corPrimaria" id="certificados">
+		<div class="container">
+			<h2 class="jumbotron-heading titulosBrancos">Certificados</h2>
+			<!-- abaixo, coloquei texto à esquerda com text-left e tabulei cada parágrafo com padding-left 70, 140, 210px -->
+			<p class="recuo1 lead paragrafoBrancos text-left">
+				1)&ensp; Posicione o mouse sobre a imagem 
+				para ampliá-la.</p>
+			<p class="recuo2 lead paragrafoBrancos text-left">
+				2)&ensp; Clique nos botões verdes no canto 
+				inferior esquerdo de cada certificado para navegar entre eles.</p>
+			<p class="recuo3 lead paragrafoBrancos text-left">
+				3)&ensp; Para sair, apenas retire o mouse 
+				de cima da imagem.</p>
+
+			<!-- abaixo, lista não ordenada <ul> usada para agrupar Certificados/Imagens -->
+			<blockquote class="blockquote text-center" style="padding-top: 1px">
+				<ul class="slider">
+					<!-- type="radio" permite a navegação entre a "label" e seus respectivos nomes: slide1 - slide2 etc
+						e para essa navegação funcionar, os "id" devem ter o mesmo nome da sua respectiva "label" -->
+					<!-- "CHECKED" mostrará sempre o PRIMEIRO slide (Certificado/Imagem), se o "CHECKED" for omitido, 
+						não aparecerá nada na Tela -->
+					<li> <!-- CERTIFICADO PYTHON --> 
+						<input type="radio" id="slide1" name="slide" checked> 
+						<label for="slide1"></label>
+						<img src="https://thumbs2.imgbox.com/11/5f/jx79D87u_t.png" alt="CERTIFICADO PYTHON" />
+							<a href="https://imgbox.com/jx79D87u" target="_blank"></a>	
+					</li>
+					<li> <!-- CERTIFICADO CURSO BÁSICO DE POWER BI -->
+						<input type="radio" id="slide2" name="slide">
+						<label for="slide2"></label>
+						<img src="https://thumbs2.imgbox.com/f9/2d/z6jCB35k_t.jpg" alt="CERTIFICADO POWER BI" />
+							<a href="https://imgbox.com/z6jCB35k" target="_blank"></a>	
+					</li>
+					<li> <!-- CERTIFICADO BIG DATA -->
+						<input type="radio" id="slide3" name="slide">
+						<label for="slide3"></label>
+						<img src="https://thumbs2.imgbox.com/2b/02/UO8Hnczv_t.png" alt="CERTIFICADO BIG DATA" />
+							<a href="https://imgbox.com/UO8Hnczv" target="_blank"></a>
+					</li>
+					<li> <!-- CERTIFICADO DAX STUDIO POWER BI -->
+						<input type="radio" id="slide4" name="slide">
+						<label for="slide4"></label>
+						<img src="https://thumbs2.imgbox.com/a6/fd/AK1vezoO_t.jpg" alt="CERTIFICADO DAX STUDIO" />          						
+							<a href="https://imgbox.com/AK1vezoO" target="_blank"></a>	
+					</li>
+					<li> <!-- CERTIFICADO JAVA -->
+						<input type="radio" id="slide5" name="slide">
+						<label for="slide5"></label>
+						<img src="https://thumbs2.imgbox.com/2a/59/8TuFcvz1_t.png" alt="CERTIFICADO JAVA" />	
+							<a href="https://imgbox.com/8TuFcvz1" target="_blank"></a>
+					</li>
+				</ul>
+			</blockquote>
+              
+		</div>	
+	</section>
+	<!-- Fim da PARTE 4 -->
+
+	<!-- PARTE 5 - Sobre mim -->
+	<section class="album py-5 bg-light" Id="sobre-mim">
+		<div class="container">
+			<h2 class="text-center jumbotron-heading titulosVerdes">Sobre mim</h2>
+			
+			<blockquote class="blockquote text-center">
+				<p>Amante de literatura, séries de TV, vôlei, lasanha e de 
+				música, música, música e muita música &#127930 &#127927 &#127928 &#127925.</p>
+				<p>Nas horas vagas, além de passear com meus amigos, corrijo traduções 
+				de músicas, e isto além de melhorar meu vocabulário, 
+				ainda me ajuda com as linguagens de programação, que diga-se de 
+				passagem, são todas em inglês.</p>
+				
+				<div class="video">
+					<iframe class="video"
+						src="https://streamable.com/e/q39o7r" frameborder="0" type="application/x-shockwave-flash"
+						allowfullscreen="false" allowscriptaccess="always"></iframe>
+					<span class="legenda">New Kids On The Block - I'll Be Loving You</span><br><br>
+				</div>
+
+				<div class="video">
+					<iframe class="video" 
+						src="https://streamable.com/e/yn6f0b" frameborder="0" type="application/x-shockwave-flash"
+						allowfullscreen="false" allowscriptaccess="always"></iframe>
+					<span class="legenda">The Smiths - Bigmouth Strikes Again</span><br><br>
+				</div>
+
+				<div class="video">
+					<iframe class="video" 
+						src="https://streamable.com/e/tonha8" frameborder="0" type="application/x-shockwave-flash"
+						allowfullscreen="false" allowscriptaccess="always"></iframe>
+					<span class="legenda">Kool & The Gang - Cherish</span><br><br>
+				</div>
+
+				<div class="video">
+					<iframe class="video"
+						src="https://streamable.com/e/17j051" frameborder="0" type="application/x-shockwave-flash"
+						allowfullscreen="false" allowscriptaccess="always"></iframe>
+					<span class="legenda">Pet Shop Boys - It's A Sin</span><br><br>
+				</div>
+				
+				<div class="video">
+					<iframe class="video"
+						src="https://streamable.com/e/gpgv6j" frameborder="0" type="application/x-shockwave-flash"
+						allowfullscreen="false" allowscriptaccess="always"></iframe>
+					<span class="legenda">Culture Club - The War Song</span><br><br>
+				</div>
+
+				<div class="video">
+					<iframe class="video"
+						src="https://streamable.com/e/dmi6d0" frameborder="0" type="application/x-shockwave-flash"
+						allowfullscreen="false" allowscriptaccess="always"></iframe>
+					<span class="legenda">Britney Spears - Oops I Did It Again</span><br><br>
+				</div>						
+			</blockquote>
+
+		</div>
+	</section>
+	<!-- Fim da PARTE 5 -->
+
+	<!-- PARTE 6 - Contato -->
+	<section class="jumbotron text-center corPrimaria" id="contato">
+		<div class="container">
+			<h2 class="jumbotron-heading titulosBrancos">Contato</h2>
+			<p class="lead paragrafoBrancos">Envie uma mensagem via WhatsApp clicando no ícone abaixo:</p>
+
+			<h1 class="text-center">
+				<a class="icones-fim-site" href="https://api.whatsapp.com/send?phone=5511997355410">
+					<i><img class="icones-fim-site"
+						src="https://img.icons8.com/color/48/000000/whatsapp--v1.png"
+						title="WhatsApp (11) 99735-5410"></i></a>
+	
+						<a target="_blank" href="https://icons8.com/icon/16713/whatsapp"></a>
+			</h1>
+
+			<p class="lead paragrafoBrancos">Ou se preferir: marcos.lopes08@gmail.com</p>
+			
+		</div>
+	</section>
+	<!-- Fim da PARTE 6 -->
+
+	<!-- PARTE 7 - Rodapé do site -->
+	<footer class="text-center rodapeSite">
+		<p class="rodapeSite">Copyright 2022 - All Rights Reserved ®</p>
+	</footer>
+	<!-- Fim da PARTE 7 -->
+		
+	<!-- Abaixo, jQuery (Java) que faz Botão VOLTAR AO TOPO aparecer/desaparecer na rolagem da página -->
+	<script src="java/animacaoBotaoVoltarAoTopo.js"></script>
+
+	<a href="#" class="voltarAoTopo">
+		<img src="https://thumbs2.imgbox.com/29/f4/fKesXtbd_t.png" 
+		width="50px" height="50px" title="Topo da Página"
+			alt="Voltar ao Topo"/></a>
+	<!-- Acima, jQuery (Java) que faz Botão VOLTAR AO TOPO aparecer/desaparecer na rolagem da página -->
+
+</body>
+
+</html>
